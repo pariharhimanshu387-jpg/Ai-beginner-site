@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Learning for Beginners</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <span class="brand-mark">AI</span>
+          <h1>AI Learning</h1>
+        </div>
+        <nav class="site-nav">
+          <a href="#home">Home</a>
+          <a href="#learn">Learn</a>
+          <a href="#quiz">Quiz</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="hero-section">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <p class="eyebrow">Beginner Friendly</p>
+            <h2>Learn how to build simple apps with AI.</h2>
+            <p class="hero-text">
+              Easy lessons and a fun quiz help you practice what you learn.
+            </p>
+            <a class="button button-primary" href="#quiz">Start Quiz</a>
+          </div>
+          <div class="hero-card">
+            <h3>Start with these lessons</h3>
+            <ul>
+              <li>What is AI?</li>
+              <li>Best AI Tools</li>
+              <li>How AI Writes Code</li>
+              <li>How Websites Work</li>
+              <li>Build Your First Project</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="learn" class="section section-soft">
+        <div class="container">
+          <div class="section-header">
+            <p class="eyebrow">Learn</p>
+            <h2>Five beginner lessons to help you get started</h2>
+            <p class="section-text">
+              Each lesson is short, easy to read, and built for people who are new to AI and web development.
+            </p>
+          </div>
+
+          <div class="lesson-grid">
+            <article class="lesson-card">
+              <h3>What is AI?</h3>
+              <p>Learn what artificial intelligence means and why it is helpful for apps and websites.</p>
+            </article>
+            <article class="lesson-card">
+              <h3>Best AI Tools</h3>
+              <p>Discover friendly tools that beginners can use to create AI content and apps.</p>
+            </article>
+            <article class="lesson-card">
+              <h3>How AI Writes Code</h3>
+              <p>See how AI can help write code and make programming easier for beginners.</p>
+            </article>
+            <article class="lesson-card">
+              <h3>How Websites Work</h3>
+              <p>Understand the simple parts of a website: HTML, CSS, and JavaScript.</p>
+            </article>
+            <article class="lesson-card">
+              <h3>Build Your First Project</h3>
+              <p>Take the next step by building a small, real project with what you learned.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="quiz" class="section section-soft">
+        <div class="container">
+          <div class="section-header">
+            <p class="eyebrow">Quiz</p>
+            <h2>Test your AI learning</h2>
+            <p class="section-text">
+              Answer the quiz questions one at a time. Choose the best answer, then see your score.
+            </p>
+          </div>
+
+          <div class="quiz-card">
+            <div class="quiz-header">
+              <p id="question-number">Question 1 of 5</p>
+              <h3 id="question-text">Loading question...</h3>
+            </div>
+            <div id="options" class="options-grid"></div>
+            <div id="quiz-footer" class="quiz-footer hidden">
+              <p id="quiz-score"></p>
+              <button id="restart-button" class="button button-secondary">Restart Quiz</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="container contact-grid">
+          <div class="contact-info">
+            <p class="eyebrow">Contact</p>
+            <h2>Have questions? Reach out.</h2>
+            <p>
+              Use this simple contact form to send a message. This is a sample form for learning
+              how a website can accept user input.
+            </p>
+            <div class="contact-box">
+              <p><strong>Email:</strong> hello@ailearning.com</p>
+              <p><strong>Message:</strong> Ask anything about starting with AI and building simple apps.</p>
+            </div>
+          </div>
+
+          <form id="contact-form" class="contact-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required />
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Type your question here" required></textarea>
+
+            <button type="submit" class="button button-primary">Send Message</button>
+            <p id="form-response" class="response"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>Version 3 | Simple AI learning for beginners.</p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
