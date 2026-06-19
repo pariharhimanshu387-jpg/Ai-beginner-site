@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AI Learning for Beginners</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header class="site-header">
@@ -13,12 +13,15 @@
           <span class="brand-mark">AI</span>
           <h1>AI Learning</h1>
         </div>
-        <nav class="site-nav">
-          <a href="#home">Home</a>
-          <a href="#learn">Learn</a>
-          <a href="#quiz">Quiz</a>
-          <a href="#contact">Contact</a>
-        </nav>
+        <div class="header-actions">
+          <nav class="site-nav">
+            <a href="#home">Home</a>
+            <a href="#learn">Learn</a>
+            <a href="#quiz">Quiz</a>
+            <a href="#contact">Contact</a>
+          </nav>
+          <button id="theme-toggle" class="button button-tertiary">Dark Mode</button>
+        </div>
       </div>
     </header>
 
@@ -29,18 +32,17 @@
             <p class="eyebrow">Beginner Friendly</p>
             <h2>Learn how to build simple apps with AI.</h2>
             <p class="hero-text">
-              Easy lessons and a fun quiz help you practice what you learn.
+              Easy lessons, a progress tracker, and a quiz help you move forward with confidence.
             </p>
-            <a class="button button-primary" href="#quiz">Start Quiz</a>
+            <a class="button button-primary" href="#learn">Start Learning</a>
           </div>
-          <div class="hero-card">
-            <h3>Start with these lessons</h3>
+          <div class="hero-card hero-feature-card">
+            <h3>What’s new in Version 4</h3>
             <ul>
-              <li>What is AI?</li>
-              <li>Best AI Tools</li>
-              <li>How AI Writes Code</li>
-              <li>How Websites Work</li>
-              <li>Build Your First Project</li>
+              <li>Lesson progress tracker</li>
+              <li>Dark mode toggle</li>
+              <li>20-question practice quiz</li>
+              <li>Improved spacing for mobile devices</li>
             </ul>
           </div>
         </div>
@@ -52,31 +54,127 @@
             <p class="eyebrow">Learn</p>
             <h2>Five beginner lessons to help you get started</h2>
             <p class="section-text">
-              Each lesson is short, easy to read, and built for people who are new to AI and web development.
+              Mark lessons complete and watch your progress grow as you learn the basics of AI and websites.
             </p>
           </div>
 
+          <div class="progress-panel">
+            <div class="progress-header">
+              <p class="progress-title">Lesson progress</p>
+              <p id="progress-percent">0% complete</p>
+            </div>
+            <div class="progress-bar">
+              <div id="progress-fill" class="progress-fill"></div>
+            </div>
+            <p class="progress-note">Tip: Click each lesson card when you finish reading it to see your progress grow.</p>
+          </div>
+
           <div class="lesson-grid">
-            <article class="lesson-card">
+            <article id="lesson-1" class="lesson-card lesson-card-clickable" data-lesson="What is AI?">
+              <div>
+                <h3>🤖 What is AI?</h3>
+                <p>
+                  Artificial intelligence is technology that helps computers learn from examples so they can solve problems, answer questions, and understand patterns.
+                </p>
+              </div>
+              <span class="lesson-status">Mark complete</span>
+            </article>
+            <article id="lesson-2" class="lesson-card lesson-card-clickable" data-lesson="Best AI Tools">
+              <div>
+                <h3>🛠️ Best AI Tools</h3>
+                <p>Discover friendly tools that beginners can use to create AI content and apps.</p>
+              </div>
+              <span class="lesson-status">Mark complete</span>
+            </article>
+            <article id="lesson-3" class="lesson-card lesson-card-clickable" data-lesson="How AI Writes Code">
+              <div>
+                <h3>💻 How AI Writes Code</h3>
+                <p>See how AI can help write code and make programming easier for beginners.</p>
+              </div>
+              <span class="lesson-status">Mark complete</span>
+            </article>
+            <article id="lesson-4" class="lesson-card lesson-card-clickable" data-lesson="How Websites Work">
+              <div>
+                <h3>🌐 How Websites Work</h3>
+                <p>Understand the simple parts of a website: HTML, CSS, and JavaScript.</p>
+              </div>
+              <span class="lesson-status">Mark complete</span>
+            </article>
+            <article id="lesson-5" class="lesson-card lesson-card-clickable" data-lesson="Build Your First Project">
+              <div>
+                <h3>🚀 Build Your First Project</h3>
+                <p>Take the next step by building a small, real project with what you learned.</p>
+              </div>
+              <span class="lesson-status">Mark complete</span>
+            </article>
+          </div>
+
+          <div class="lesson-extras">
+            <article class="lesson-detail">
               <h3>What is AI?</h3>
-              <p>Learn what artificial intelligence means and why it is helpful for apps and websites.</p>
+              <p class="lesson-detail-text">
+                AI means teaching computers to learn from data, recognize patterns, and make smart guesses. For example, a chatbot answers questions and a photo app can find your pictures.
+              </p>
+              <p class="lesson-example"><strong>Example:</strong> A smart assistant that helps you write a message.</p>
+              <p class="lesson-challenge"><strong>Mini challenge:</strong> Write one sentence about where you have seen AI in real life.</p>
+              <a href="#lesson-2" class="button button-secondary">Next lesson</a>
             </article>
-            <article class="lesson-card">
+            <article class="lesson-detail">
               <h3>Best AI Tools</h3>
-              <p>Discover friendly tools that beginners can use to create AI content and apps.</p>
+              <p class="lesson-detail-text">
+                Easy AI tools let beginners create ideas, write text, and generate images without writing lots of code.
+              </p>
+              <p class="lesson-example"><strong>Example:</strong> A tool that helps you write a simple story or idea.</p>
+              <p class="lesson-challenge"><strong>Mini challenge:</strong> Pick one AI tool and write down what you would use it for.</p>
+              <a href="#lesson-3" class="button button-secondary">Next lesson</a>
             </article>
-            <article class="lesson-card">
+            <article class="lesson-detail">
               <h3>How AI Writes Code</h3>
-              <p>See how AI can help write code and make programming easier for beginners.</p>
+              <p class="lesson-detail-text">
+                AI can suggest code lines and help you understand how to use them. It is like having a helpful coding assistant.
+              </p>
+              <p class="lesson-example"><strong>Example:</strong> A helper that writes a button or a page layout for you.</p>
+              <p class="lesson-challenge"><strong>Mini challenge:</strong> Think of one small feature you want on your website.</p>
+              <a href="#lesson-4" class="button button-secondary">Next lesson</a>
             </article>
-            <article class="lesson-card">
+            <article class="lesson-detail">
               <h3>How Websites Work</h3>
-              <p>Understand the simple parts of a website: HTML, CSS, and JavaScript.</p>
+              <p class="lesson-detail-text">
+                Websites use HTML for content, CSS for style, and JavaScript for interaction.
+              </p>
+              <p class="lesson-example"><strong>Example:</strong> HTML creates headings, CSS colors them, and JavaScript adds buttons.
+              </p>
+              <p class="lesson-challenge"><strong>Mini challenge:</strong> Name one thing you can change with CSS.</p>
+              <a href="#lesson-5" class="button button-secondary">Next lesson</a>
             </article>
-            <article class="lesson-card">
+            <article class="lesson-detail">
               <h3>Build Your First Project</h3>
-              <p>Take the next step by building a small, real project with what you learned.</p>
+              <p class="lesson-detail-text">
+                Start simple and build one small app or page. Use the lessons together for a clear next step.
+              </p>
+              <p class="lesson-example"><strong>Example:</strong> A webpage with a title, an image, and one button.</p>
+              <p class="lesson-challenge"><strong>Mini challenge:</strong> Plan one small project idea you can build next.</p>
+              <a href="#quiz" class="button button-secondary">Go to Quiz</a>
             </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="try-yourself" class="section section-soft">
+        <div class="container">
+          <div class="section-header">
+            <p class="eyebrow">Try it yourself</p>
+            <h2>Practice a simple AI idea</h2>
+            <p class="section-text">
+              Use this quick activity to try writing your own AI prompt and understand how learning works.
+            </p>
+          </div>
+
+          <div class="try-card">
+            <p>Example prompt:</p>
+            <pre class="code-sample">Write a short explanation of how a beginner can learn AI with simple web projects.</pre>
+            <p class="lesson-challenge"><strong>Your challenge:</strong> Write a prompt that starts with "Explain how..." or "Show me..." in your own words.</p>
+            <a class="button button-primary" href="#quiz">Go to Quiz</a>
           </div>
         </div>
       </section>
@@ -85,15 +183,15 @@
         <div class="container">
           <div class="section-header">
             <p class="eyebrow">Quiz</p>
-            <h2>Test your AI learning</h2>
+            <h2>Practice with 20 AI questions</h2>
             <p class="section-text">
-              Answer the quiz questions one at a time. Choose the best answer, then see your score.
+              One question appears at a time. Pick the best answer and see your score when you finish.
             </p>
           </div>
 
           <div class="quiz-card">
             <div class="quiz-header">
-              <p id="question-number">Question 1 of 5</p>
+              <p id="question-number">Question 1 of 20</p>
               <h3 id="question-text">Loading question...</h3>
             </div>
             <div id="options" class="options-grid"></div>
@@ -139,10 +237,16 @@
 
     <footer class="site-footer">
       <div class="container footer-inner">
-        <p>Version 3 | Simple AI learning for beginners.</p>
+        <div>
+          <p><strong>AI Beginner Site</strong></p>
+          <p>Built for learning with AI</p>
+        </div>
+        <div>
+          <p>Version 5</p>
+        </div>
       </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
